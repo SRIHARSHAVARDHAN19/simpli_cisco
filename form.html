@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+</head>
+<body>
+    <form method="post" action="first.html">
+        <div>
+            <label for="full">Full Name</label>
+            <input type="text" name="full" id="full" placeholder="Enter the full name" required/>
+        <div>
+        <br>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter your age"/>
+        </div>
+        <br>
+        <div>
+            <label for="contact">Contact Nos *</label>
+            <input type="text" name="contact" id="contact" placeholder="Enter your contact number" required/>
+        </div>
+        <br>
+        <div>
+            <label for="dob">DOB *</label>
+            <input type="date" name="dob" id="dob" placeholder="Enter your DOB" required/>
+        </div>
+        <br>
+        <div>
+            <label for="pass">Set password *</label>
+            <input type="password" name="pass" id="pass" placeholder="Enter combination of letters, number,@" required/>
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" value="male"/>
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female" value="female"/>
+            <label for="female">female</label>
+        </div>
+        <br>
+        <div>
+            <label for="lang">Languages You Know</label>
+            <input type="checkbox" name="lang" id="eng" value="eng"/>
+            <label for="eng">English</label>
+            <input type="checkbox" name="lang" id="hin" value="hin"/>
+            <label for="hin">Hindi</label>
+        </div>
+        <br>
+        <div>
+            <label for="query">query</label>
+            <textarea rows="10" cols="20" id="query" name="query">
+            </textarea>
+        </div>
+        <br>
+        <div>
+            <label for="country">Country</label>
+            <select id="country" name="country" multiple>
+                <option value="India">India</option>
+                <option value="US">US</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Japan">Japan</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Your Favorite Food</label>
+            <input type="text" name="food" id="food" list="foods"/>
+            <datalist id="foods">
+                <option value="North Indian"/>
+                <option value="Chinese"/>
+                <option value="South Indian"/>
+            </datalist>
+        </div>
+        <br>
+        <div>
+            <label id="resume">Upload your resume</label>
+            <input type="file" id="resume" name="resume"/>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </div>
+        <br>
+    <div>
+        <label for="progress"></label>
+        <progress id="file" value="10" max="100">10%</progress>
+    </div>
+    </form>
+    
+</body>
+</html>
